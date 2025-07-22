@@ -3,9 +3,11 @@ import { RouterModule } from '@angular/router';
 import { FaIconLibrary, FaConfig } from '@fortawesome/angular-fontawesome';
 import { fontAwesomeIcons } from './shared/font-awesome-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { Navbar } from "./layout/navbar/navbar";
+import { Footer } from './layout/footer/footer';
 
 @Component({
-  imports: [RouterModule, FontAwesomeModule],
+  imports: [RouterModule, FontAwesomeModule, Navbar, Footer],
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrl: './app.scss',
